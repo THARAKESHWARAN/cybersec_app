@@ -1,5 +1,4 @@
-echo "Gimme the drive id: "
-read DRIVE_ID
+DRIVE_ID=13SvV4q7Sd2gp43jvljUdR_J_Bq90Za2b;
 
 curl -c /tmp/cookie -s -L "https://drive.google.com/uc?export=download&id=${DRIVE_ID}" > /tmp/intermediate.html;
 CONFIRM_TOKEN=$(grep -oP 'confirm=\K[^&]+' /tmp/intermediate.html);
