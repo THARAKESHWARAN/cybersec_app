@@ -31,4 +31,4 @@ printf "\n"
 }' <<< "$line";
 done < club_records.csv > club_records_trimmed_version.csv;
 
-echo "The trimmed version is saved in club_records_trimmed_version.csv";
+echo "The trimmed version is saved in cuckoo/16/6/20/club_records_trimmed_version.csv";
